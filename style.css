@@ -394,8 +394,12 @@ nav{
 
   
 }
-.btns{
-  margin-left: 20px;
-}
+.central-block{
+  display:flex;
+  flex-direction:column;
+  
+  
+  
 }
 
+}
