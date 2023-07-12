@@ -343,7 +343,7 @@ i{
 hr{
   margin-top: 15rem;
 }
-@media(max-width:600px){
+@media(max-width:800px){
 .nave {
   margin:0px;
   position: none;
