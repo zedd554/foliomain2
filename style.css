@@ -357,12 +357,13 @@ hr{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  
+  align-items: center;
   margin-right:0;
 
 }
 .copy, .graph, .web{
   margin-top: 40px;
+  
 }
 p{
   display:block
