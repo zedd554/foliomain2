@@ -1,7 +1,7 @@
 body{
   padding:0px;
   margin:0px;
-  background-color: rgb(234, 255, 255);
+  background:linear-gradient(rgb(133, 133, 245),rgb(212, 255, 255));
   
 }
 html{
@@ -11,6 +11,7 @@ img{
   height:10rem;
   width:10rem;
   transform: rotateX(45 deg);
+
 }
 .logo{
   font-size: 40px;
@@ -65,10 +66,11 @@ nav{
 .right{
   margin-right: 0px;
 }
-.h1{text-shadow: 10px 10px 15px rgb(127, 126, 126);
-  font-size: 40px;
+.h1{
+  
   font-weight: 1000;
   animation: slideRight 0.5s ease;
+  
 }
 #pehla{
   display:inline;
@@ -98,7 +100,8 @@ position: relative;
   right:100px;
   top:80px;
   border-radius: 50%;
-  border:2px solid blue
+  border:2px solid blue;
+ 
 }
 
 .two{
@@ -115,7 +118,7 @@ text-shadow: 10px 10px 15px silver;
   #70539d, #5033d2, #44ccee);
 -webkit-text-fill-color: transparent;
 -webkit-background-clip: text;
-text-shadow: 10px 10px 15px silver;
+
 }
 .block{
   width:600px;
@@ -149,18 +152,15 @@ button{
  margin-left:20px;
   margin-top:70px;
   animation:slideRight 1s ease-in;
-  box-shadow:0px 4px 2px rgb(178, 178, 178);
-  background-color: #865ac8;
-  color:white;
-  border:2px solid rgb(4, 4, 102);
-  border-radius: 10px;
-  height:50px;
-  width:200px;
+  
+  
+
+
   font-size:1.1rem;
 }
 button:hover{
   cursor: pointer;
-  background-color: rgb(83, 19, 143);
+  
 }
 .btns{
   margin-left: 100px;
@@ -303,6 +303,7 @@ font-size: 40px;
   list-style: disc;
 }
 footer{
+  border-radius: 2%;
   background:linear-gradient(to right, #7F7FD5, #34E89E);
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -310,7 +311,7 @@ footer{
   background-size: cover;
 }
 .footer{
-  height:20rem;
+  height:15rem;
 
   width:100%;
 }
@@ -331,7 +332,7 @@ i{
   display:flex;
   justify-content: center;
   align-items: flex-end;
-  margin-top: 12rem;
+  margin-top: 6rem;
 }
 .footer-cont a{
   border-radius: 50%;
@@ -340,8 +341,11 @@ i{
   margin:10px;
   
 }
-hr{
-  margin-top: 15rem;
+.line{
+  margin-top: 18rem;
+}
+footer{
+  margin-top: 20rem;
 }
 @media(max-width:1000px){
 .nave {
@@ -402,4 +406,60 @@ nav{
   
 }
 
+}
+.h1{
+  font-size: 4rem;
+  
+}
+.h2{
+  font-size: 2rem;
+  position:relative;
+  top:-3.5rem
+}
+p{
+  position:relative;
+  bottom:4rem;
+}
+.button {
+  height:4rem;
+  width: 200px;
+  position: relative;
+  background:linear-gradient(to right, #a1c4fd 0%, #a5cfe2 51%, #a1c4fd 100%);
+  cursor: pointer;
+  border: 2px solid #c5c3ef;
+  overflow: hidden;
+  border-radius: 30px;
+  color: #212121;
+  transition: all 0.5s ease-in-out;
+}
+
+.btn-txt {
+  z-index: 1;
+  font-weight: 800;
+  letter-spacing: 4px;
+}
+
+.type1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: all 0.5s ease-in-out;
+  background-color: #000366;
+  border-radius: 30px;
+  visibility: hidden;
+  height: 10px;
+  width: 10px;
+  z-index: -1;
+}
+
+.button:hover {
+  box-shadow: 1px 1px 200px #0c0b0b;
+  color: #fff;
+  border: none;
+}
+
+.type1:hover::after {
+  visibility: visible;
+  transform: scale(100) translateX(2px);
 }
