@@ -426,7 +426,7 @@ p{
   position: relative;
   background:linear-gradient(to right, #a1c4fd 0%, #a5cfe2 51%, #a1c4fd 100%);
   cursor: pointer;
-  left:4rem;
+  left:8rem;
   border: 2px solid #c5c3ef;
   overflow: hidden;
   border-radius: 30px;
